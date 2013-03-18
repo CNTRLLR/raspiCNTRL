@@ -28,13 +28,22 @@ Run the build script to update all packages and software
 
 <h4>Install from scratch:</h4>
 Login to the rpi using root:raspi
-First thing to do is to clone the SYSTM repo which contains useful build scripts to automate much of the configuration process. Run the following command to install git:
+
+First thing to do is to update the Operating System
+
+<code>apt-get -y update; apt-get -y dist-upgrade</code>
+
+Next we will clone the SYSTM repo which contains useful build scripts to automate much of the configuration process. But first we must install git.
 
 <code>sudo apt-get install git</code>
 
-Then clone the repo. Make sure you use the directory specified:
+Clone the repo. Make sure you use the directory specified:
 
 <code>git clone git://github.com/CNTRLLR/SYSTM.git /opt/cntrllr</code>
+
+Make the scripts executable
+
+<code>chmod u+x /opt/cntrllr/build/*.sh</code>
 
 Now run the script to update the OS and software.
 
