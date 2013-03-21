@@ -108,11 +108,13 @@ Configures node for low port access. This must run after node has been installed
 
 <code>sudo setcap cap_net_bind_service=+ep /usr/local/bin/node</code>
 </li>
+<!--
 <li>
 Get rpi-update via https://github.com/Hexxeh/rpi-update
 
 <code>sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update && sudo chmod +x /usr/bin/rpi-update && sudo rpi-update</code>
 </li>
+-->
 <li>
 Clone the SYSTM repo
 
