@@ -1,7 +1,7 @@
-SYSTM-pi
+raspiCNTRL
 =======
 
-SYSTM images and build scripts for Raspberry pi.
+SYSTM build for Raspberry pi.
 
 <h3>IMAGES</h3>
 Contains Raspberry pi IMG files ready to flash and boot.
