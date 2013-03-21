@@ -54,7 +54,7 @@ Update mirrors
 
 Install various OS utilities
 
-<code>sudo apt-get -y install g++ make libssl-dev</code>
+<code>sudo apt-get -y install g++ make libssl-dev python</code>
 
 Install libnss-mdns. This is used for multicast DNS services
 
@@ -72,9 +72,9 @@ Install and compile Node.js manually because package is out of date
 
 <code>
 cd ~<br/>
-wget http://nodejs.org/dist/v0.10.0/node-v0.10.0-linux-arm-pi.tar.gz<br/>
-tar -zxf node-v0.10.0-linux-arm-pi.tar.gz<br/>
-cd node-v0.10.0-linux-arm-pi<br/>
+wget http://nodejs.org/dist/v0.10.0/node-v0.10.0.tar.gz<br/>
+tar -zxf node-v0.10.0.tar.gz<br/>
+cd node-v0.10.0<br/>
 ./configure<br/>
 make<br/>
 sudo make install<br/>
