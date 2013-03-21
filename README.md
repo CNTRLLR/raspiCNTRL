@@ -98,6 +98,17 @@ sudo make install<br/>
 </code>
 </li>
 <li>
+Install gpio-admin. Allows you to use gpio without root
+<br/>
+<code>
+cd ~<br/>
+git clone git://github.com/quick2wire/quick2wire-gpio-admin.git<br/>
+cd quick2wire-gpio-admin<br/>
+make<br/>
+sudo make install<br/>
+sudo adduser $USER gpio<br/>
+</li>
+<li>
 Install libcap2 binaries. This package allows running apps on low ports without requiring root.
 <br/>
 <code>sudo apt-get -y install libcap2-bin</code>
