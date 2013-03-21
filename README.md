@@ -90,11 +90,11 @@ Configures node for low port access. This must run after node has been installed
 
 Clone the SYSTM repo
 
-<code>git clone git://github.com/CNTRLLR/SYSTM.git /opt/cntrllr</code>
+<code>sudo git clone git://github.com/CNTRLLR/SYSTM.git /opt/cntrllr</code>
 
 Make the helper scripts executable
 
-<code>chmod u+x /opt/cntrllr/build/*.sh</code>
+<code>sudo chmod u+x /opt/cntrllr/build/*.sh</code>
 
 Now run the script to update the OS and software.
 
