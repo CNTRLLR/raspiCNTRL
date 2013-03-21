@@ -17,8 +17,17 @@ Contains utilities for flashing IMG files, etc.
 Flash an image to an SD Card. In Windows you can use Win32diskimager to do this. Load the SD card into the rpi and you're ready to go.
 
 <h4>Install from CNTRLLR IMG:</h4>
-Login to the rpi
-First, update SYSTM repo and associated build scripts.
+Login to the rpi using <i>pi:raspberry</i>
+
+Update the Operating System
+
+<code>apt-get -y update; apt-get -y dist-upgrade</code>
+
+Update mirrors
+
+<code>sudo apt-get -y update --fix-missing</code>
+
+Update SYSTM repo.
 
 <code>cd /opt/cntrllr;git pull</code>
 
