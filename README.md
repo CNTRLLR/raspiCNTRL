@@ -140,4 +140,25 @@ Now run the script to update the OS and software.
 <br/>
 <code>sudo /opt/cntrllr/build/pi-setup.sh</code>
 </li>
+<li>
+<b>Optional: </b>Install samba to simplify development on Windows.<br/>
+Install samba packages
+<code>sudo apt-get -y install samba samba-common-bin</code><br/>
+Edit the config<br/>
+<code>sudo nano /etc/samba/smb.conf</code><br/>
+Uncomment the following line<br/>
+<code>security = user</code><br/>
+Add the following lines:<br/>
+<code>
+[SYSTM]<br/>
+comment = SYSTM folder<br/>
+path = /opt/cntrllr/systm<br/>
+writeable = yes<br/>
+guest ok = no<br/>
+</code>
+Add a samba user<br/>
+<code>sudo smbpasswd -a pi</code><br/>
+Restart samba<br/>
+<code>sudo /etc/init.d/samba restart</code>
+</li>
 </ul>
